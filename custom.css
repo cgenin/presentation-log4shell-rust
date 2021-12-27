@@ -1,0 +1,60 @@
+
+/**
+ * @theme custom
+ * @auto-scaling fittingHeader,math
+ */
+
+ 
+ @import 'default';
+
+:root {
+    --color-primary:#0374bc;
+    --color-secondary: #6bc024;
+    --color-background: rgb(245, 244, 244);
+    --color-background-code: #ccc;
+    --color-background-paginate: rgba(128, 128, 128, 0.05);
+    --color-foreground: #0374bc;
+    --color-highlight: #99c;
+    --color-highlight-hover: #aaf;
+    --color-highlight-heading: #99c;
+    --color-header: #bbb;
+    --color-header-shadow: transparent;
+  }
+
+ section.invert h1 {
+    background-color: var(--color-secondary);
+    color: white;
+    border-radius: 8px;
+    letter-spacing: normal;
+    text-align: center;
+    padding: 20px;
+ } 
+
+ section.invert a,
+ section.invert a:visited {
+    color: var(--color-secondary);
+ }
+
+ section.invert {
+   background-color: var(--color-primary);   
+ }
+
+section.invert p {
+   text-align: center;
+} 
+
+ /*
+ Première diapositive
+ */
+
+ section[id="1"]:first-child  {
+    /*display: flex; 
+    align-items: center;
+    text-align: center;
+    */
+ }
+
+ section .hljs-string {
+    color:yellowgreen
+ }
+

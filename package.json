@@ -1,0 +1,22 @@
+{
+  "name": "log4shell-rust",
+  "version": "1.0.0",
+  "description": "Proposition de présentation pour le devoxx 2021",
+  "main": "index.js",
+  "scripts": {
+    "start": "marp --theme-set custom.css -s -w -I .",
+    "html": "marp --theme-set custom.css --allow-local-files log4shell-rust.md -o log4shell-rust.html",
+    "pdf": "marp --theme-set custom.css --allow-local-files slidlog4shell-rustes.md -o log4shell-rust.pdf",
+    "ppt": "marp --theme-set custom.css --allow-local-files log4shell-rust.md  -o log4shell-rust.pptx"
+  },
+  "keywords": [
+    "Devoxx",
+    "conference",
+    "mdpa"
+  ],
+  "author": "Genin C.",
+  "license": "ISC",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^1.5.0"
+  }
+}
