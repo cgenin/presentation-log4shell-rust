@@ -45,6 +45,8 @@ Via nos outils de builds (maven, gradle) ?
 
 ## Sauf que nous avons beaucoup de projet...
 
+ Plus de 100 projets en tout.
+
 
 
 Et en plus certains projets sont spéciaux. Par exemple : il rajoute des librairies en dehors du gestionnaire des dépendances. 
@@ -175,7 +177,8 @@ Après un certain temps ou un temps certain...
 - Ops : Ton exe, il fonctionne ? Car il n'affiche rien.
 - Moi : C'est bizarre. Lors de mes tests en local, cela a fonctionné.
 Tu l'as exécuté dans le répertoire des wars ? 
-- Ops : Ben non. De toute façon, je ne peux pas le faire dedans. Tu pourrais me refaire un exe dans `/home/mon-mega-user/234-ef/...` ? 
+- Ops : Ben non. De toute façon, je ne peux pas le faire dedans. Tu pourrais me refaire un exe qui parse le répertoire 
+`/home/mon-mega-user/2-ef/...` ? 
 
 --- 
 

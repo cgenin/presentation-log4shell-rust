@@ -38,21 +38,12 @@
  section.invert {
    background-color: var(--color-primary);   
  }
-
+/*
 section.invert p {
    text-align: center;
-} 
+}
 
- /*
- Première diapositive
  */
-
- section[id="1"]:first-child  {
-    /*display: flex; 
-    align-items: center;
-    text-align: center;
-    */
- }
 
  section .hljs-string {
     color:yellowgreen
