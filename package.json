@@ -6,8 +6,8 @@
   "scripts": {
     "start": "marp --theme-set custom.css -s -w -I .",
     "html": "marp --theme-set custom.css --allow-local-files log4shell-rust.md -o log4shell-rust.html",
-    "pdf": "marp --theme-set custom.css --allow-local-files slidlog4shell-rustes.md -o log4shell-rust.pdf",
-    "ppt": "marp --theme-set custom.css --allow-local-files log4shell-rust.md  -o log4shell-rust.pptx"
+    "pdf": "marp --theme-set custom.css --pdf-notes  --allow-local-files log4shell-rust.md -o log4shell-rust.pdf",
+    "ppt": "marp --theme-set custom.css --pdf-notes  --allow-local-files log4shell-rust.md  -o log4shell-rust.pptx"
   },
   "keywords": [
     "Devoxx",

@@ -239,8 +239,8 @@ Ben, il n'y a plus qu'à analyser et prendre nos dispositions :smile:
 # En conclusion
 
 - Cli facilement réalisable en Rust.
-- On peut facilement faire des programmes performants sans utiliser des fonctionnalités avancées.
-- Eco Système à la Npm
+- Programmes performants sans utiliser des fonctionnalités avancées.
+- Eco Système à la Npm.
 - **Toujours rester en veille** : Cela pourra toujours servir un jour :smile:
 
 ---
