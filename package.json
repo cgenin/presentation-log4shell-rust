@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "marp --theme-set custom.css -s -w -I .",
-    "html": "marp --theme-set custom.css --allow-local-files log4shell-rust.md -o log4shell-rust.html",
+    "html": "marp --theme-set custom.css --allow-local-files log4shell-rust.md -o index.html",
     "pdf": "marp --theme-set custom.css --pdf-notes  --allow-local-files log4shell-rust.md -o log4shell-rust.pdf",
     "ppt": "marp --theme-set custom.css --pdf-notes  --allow-local-files log4shell-rust.md  -o log4shell-rust.pptx"
   },
